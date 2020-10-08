@@ -1,0 +1,26 @@
+{
+  "name": "react-flow-designer",
+  "version": "1.0.0",
+  "description": "基于 React 的流程设计器",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rayallen001/react-flow-designer.git"
+  },
+  "keywords": [
+    "react",
+    "flow",
+    "designer",
+    "editor",
+    "graph"
+  ],
+  "author": "rayallen001",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rayallen001/react-flow-designer/issues"
+  },
+  "homepage": "https://github.com/rayallen001/react-flow-designer#readme"
+}
