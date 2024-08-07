@@ -1,0 +1,50 @@
+.flow-designer {
+  position: relative;
+  display: flex;
+}
+
+.flow-designer__side-bar {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ededed;
+  border-right: 0;
+}
+
+.flow-designer__canvas {
+  position: relative;
+  flex: 1;
+  overflow-x: auto;
+  overflow-y: hidden;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASAQMAAABsABwUAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAEqADAAQAAAABAAAAEgAAAACaqbJVAAAABlBMVEXr7vX/////Buu3AAAAEElEQVQI12NgAIL6/wcoxQAMPiYfIJlKQQAAAABJRU5ErkJggg==");
+}
+
+.flow-designer__edge {
+  cursor: pointer;
+}
+
+.flow-designer__edge-input {
+  width: 60px;
+  border: 1px solid;
+  border-radius: 2px;
+}
+
+.flow-designer__edge-input:focus {
+  outline: none;
+}
+
+.flow-designer__edge-label {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/* 降低 jsplumb endpoint 的 z 坐标，用以避免 source 已有一条连线时，无法拖出第二条连线 */
+.flow-designer .jtk-endpoint {
+  z-index: -1;
+}
+
+.flow-designer__node-container {
+  position: absolute;
+  cursor: move;
+}

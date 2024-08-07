@@ -1,0 +1,21 @@
+#root {
+  height: 100%;
+}
+
+.workflow-editor {
+  position: relative;
+  height: 100%;
+}
+
+.flow-designer__side-bar {
+  height: 500px;
+}
+
+.workflow-editor__context-menu {
+  position: fixed;
+  background-color: white;
+}
+
+.flow-designer__edge--selected.http {
+  filter: drop-shadow(0 0 0.6px rgba(30, 125, 58, 0.55));
+}

@@ -1,0 +1,11 @@
+.flow-designer__node-type--container {
+  cursor: move;
+}
+
+.flow-designer__node-type--container.disabled {
+  cursor: not-allowed;
+}
+
+.flow-designer__node-type--container:not(:first-of-type) {
+  margin-top: 14px;
+}

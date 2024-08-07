@@ -1,0 +1,12 @@
+.flow-designer__node-type {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 2px;
+}
+
+.flow-designer__node-type:hover {
+  border: 1px solid transparent;
+}

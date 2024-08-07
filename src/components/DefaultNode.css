@@ -1,0 +1,52 @@
+.flow-designer__node {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  font-size: 12px;
+  background-color: #fff;
+  border: 0;
+  border-radius: 2px;
+}
+
+.flow-designer__node-name {
+  position: absolute;
+  top: 68px;
+  color: #666;
+  font-weight: 400;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.flow-designer__node-container--selected .flow-designer__node {
+  border: 1px solid transparent;
+}
+
+.flow-designer__node-endpoint {
+  position: absolute;
+  top: calc(50% - 5px);
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border: 1px solid;
+  border-radius: 100%;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+.flow-designer__node-endpoint.left {
+  left: -5px;
+}
+
+.flow-designer__node-endpoint.right {
+  right: -5px;
+}
+
+/* 节点选中或 hover 时，显示连接点 */
+.flow-designer__node--selected .flow-designer__node-endpoint,
+.flow-designer__node:hover .flow-designer__node-endpoint {
+  visibility: visible;
+}
